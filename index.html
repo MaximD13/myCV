@@ -6,81 +6,89 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="keywords" content="html, course, base, css">
     <meta name="description" content="Это сайт резюме Максима Демина">
+    <link rel="stylesheet" href="index_css.css">
     <title>My personal page</title>
 </head>
 <body>
-
-    <img src="my_photo.jpg" alt="Здесь могла быть ваша фотография" width="200">
-<hr>
-<h1>Максим Демин</h1>
-
-<p><em>Я изучаю <strong>JavaScript, HTML&CSS.</strong></em></p>
-<hr>
-
-
-<h2>Мои соцсети:</h2>
-
-<em><a href="https://vk.com/ice_wall_of_com" target="_blank">Я в Вконтакте</a></em>
-<br>
-<em><a href="https://t.me/balakistreet" target="_blank">Я в Telegram</a></em>
-<hr>
-
-<h2>Мои хобби:</h2>
-
-<ul>
-    <li>Ходить в спортивный зал</li>
-    <li>Ездить на велосипеде</li>
-    <li>Изучать экономику, строительство и программирование</li>
-    <li>Читать книги</li>
-    <li>Лежать на диване</li>
-</ul>
-
-<hr>
-<h2>Опыт работы:</h2>
-<table width="500">
-    <thead>
-        <tr>
-            <th>Название организации</th>
-            <th>Должность</th>
-            <th>Период работы</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>ООО "Граждан Проект"</td>
-            <td>Инженер-конструктор</td>
-            <td>С 25.09.2018 по Н.В.</td>
-        </tr>
-    </tbody>
-</table>
-
-<hr>
-<h2>Связаться со мной:</h2>
-<form action="">
-    <div>
-        <label for="name">Введите своё имя:</label>
-        <input type="name" id="name" placeholder="Введите своё имя">
+<div class="container">
+    <div class="info">
+        <div>
+            <img src="my_photo.jpg" alt="Здесь могла быть ваша фотография" width="200" class="avatar">
+        </div>
+            
+        <div class="myinfo">
+            <h1 class="heading">Максим Демин</h1>
+            <p class="text"><em>Основатель YouTube канала MusikGenie. Изучаю JavaScript, HTML&CSS.
+                Занимаюсь спортом, учусь в университете, работаю проектировщиком.
+            </em></p>
+            <br><br><br><br><br><br><br>
+            <h4 class="heading" id="socialmedia">Я в социальных сетях:</h4>
+            <em><a href="https://vk.com/ice_wall_of_com" target="_blank" class="btn">Я в Вконтакте</a></em>
+            |
+            <em><a href="https://t.me/balakistreet" target="_blank" class="btn">Я в Telegram</a></em>
+        </div>
     </div>
-
-    <div>
-        <label for="email">Введите свой e-mail:</label>
-        <input type="email" id="email" placeholder="Введите свой e-mail">
+    <br>
+    <div class="card">
+        <h3 class=heading>Мои хобби</h3>
+        <ul class="list">
+            <li>Ходить в спортивный зал</li>
+            <li>Ездить на велосипеде</li>
+            <li>Изучать экономику, строительство и программирование</li>
+            <li>Читать книги</li>
+            <li>Лежать на диване</li>
+        </ul>
     </div>
-
-    <div>
-        <label for="message">Введите сообщение</label>
-        <br>
-        <textarea id="messae" cols="45" rows="5" placeholder="Введите сообщение"></textarea>
+    <br>
+    <div class="card">
+        <h3 class="heading">Опыт работы</h3>
+        <table min-width="700"class="table">
+            <!-- <thead> -->
+                <tr>
+                    <th>Название организации</th>
+                    <th>Должность</th>
+                    <th>Период работы</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ООО "Граждан Проект"</td>
+                    <td>Инженер-конструктор</td>
+                    <td>25.09.2018 - Н.В.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+    <br>
+    <div id="contact" class="card">
 
-    <div>
-        <label for="email">Введите свой e-mail:</label>
-        <input type="email" id="email" placeholder="Введите свой e-mail">
+        <form action="/" class="form">
+            <h3 class="heading">Связаться со мной</h3>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="name" id="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш e-mail:</label>
+                        <input type="email" id="email" placeholder="Введите e-mail">
+                    </div>
+                </div>
+
+            <div class="form-group">
+                <label for="message">Введите сообщение:</label>
+                <br>
+                <textarea id="messae" cols="45" rows="5" placeholder="Введите сообщение"></textarea>
+            </div>
+        
+            <button type="submit" class="btn">Отправить</button>
+
+        </form>
     </div>
-    
-    <button type="submit">Отправить</button>
-
-</form>
+</div>
 
 </body>
 </html>
